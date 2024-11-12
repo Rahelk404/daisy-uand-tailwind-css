@@ -37,7 +37,7 @@
                         Poppins: 'Poppins'
                     },
                     backgroundImage: {
-                        leaf1: "url('./images/leaf01.png')",
+                        bannerBg: "url('./images/leaf01.png')",
                         call_to_action: "url('./images/call.jpg')"
                     }
                 }
@@ -55,7 +55,7 @@
             <div class="navbar p-0 py-5">
                 <!-- desktop Version Nav -->
                 <div class="navbar-start">
-                    
+
                     <a class="w-36" href="#"><img src="images/logo.svg" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -85,17 +85,53 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0 gap-5">
                             <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Home</a></li>
-                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Grocery</a></li>
-                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everything</a></li>
-                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>About</a></li>
-                        <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact</a></li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Grocery</a>
+                            </li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Everything</a>
+                            </li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>About</a></li>
+                            <li class="hover:text-primary transition-colors duration-300 ease-in-out"><a>Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
 
+        <!-- banner section -->
+        <section class="bg-bannerBg bg-no-repeat bg-right-bottom">
+            <div class="w-full h-full bg-body bg-opacity-90">
+                <div class="flex py-28 lg:w-9/12 mx-auto items-center sm:flex-row flex-col">
+                    <!-- image -->
+                    <div class="flex-1">
+                        <img src="images/bannerbg.png" alt="">
+                    </div>
+                    <!-- text -->
+                    <div class="flex-1 sm:text-left text-center">
+                        <!-- banner title and paragraph -->
+                        <div>
+                            <h2 class="text-xl font-semibold my-5">Best Quality Product</h2>
+                            <h1 class="text-4xl lg:text-6xl font-semibold leading-tight">Join The Organic Movement!</h1>
+                            <p class="text-lg my-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
+                                distinctio, enim quisquam,
+                                vero voluptas architecto rerum neque maiores sit maxime non itaque earum voluptates.
+                                Dolores, doloremque esse! Ipsum, architecto at?</p>
+                        </div>
+                        <!-- banner button -->
+                        <div class="flex sm:justify-start justify-center">
+                            <button class="btn bg-accent px-8 text-white flex items-center">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
+
+
 
 </body>
 
